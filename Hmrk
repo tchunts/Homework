@@ -1,3 +1,9 @@
-привет
-изменение
-внести и отправить прямо сейчас
+// Определение максимального из двух случайных чисел
+int numberA = new Random().Next(1,10);
+Console.WriteLine(numberA);
+int numberB = new Random().Next(1,10);
+Console.WriteLine(numberB);
+int max = 0;
+if (numberA > numberB) max = numberA;
+else max = numberB;
+Console.WriteLine(max);
