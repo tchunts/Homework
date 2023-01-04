@@ -1,9 +1,13 @@
-// Определение максимального из двух случайных чисел
-int numberA = new Random().Next(1,10);
-Console.WriteLine(numberA);
-int numberB = new Random().Next(1,10);
-Console.WriteLine(numberB);
-int max = 0;
-if (numberA > numberB) max = numberA;
-else max = numberB;
-Console.WriteLine(max);
+// Определение максимального из двух чисел
+Console.WriteLine("Введите целое число ");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе целое число ");
+int numberB = Convert.ToInt32(Console.ReadLine());
+if (numberA > numberB)
+{
+Console.WriteLine($"{numberA} больше {numberB}");
+}
+else
+{
+Console.WriteLine($"{numberB} больше {numberA}");
+}
