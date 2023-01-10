@@ -1,0 +1,10 @@
+// // Напишите программу, которая принимает на вход число (N) и выдаёт третьи степени чисел от 1 до N включительно.
+
+Console.WriteLine("Введите любое число");
+int CubeNumber = int.Parse(Console.ReadLine());
+Console.WriteLine($"Все третьи степени включая введеное число {CubeNumber}: ");
+for (int index = 1; index <= CubeNumber; index++)
+{
+    Console.Write($" {index * index * index}");
+}
+Console.WriteLine($"");
