@@ -1,0 +1,18 @@
+// Расстояние между двумя точками по их координатам в 3D
+
+Console.Write("Введите x1 для точки А: ");
+int x1 = int.Parse(Console.ReadLine());
+Console.Write("Введите y1 для точки А: ");
+int y1 = int.Parse(Console.ReadLine());
+Console.Write("Введите z1 для точки А: ");
+int z1 = int.Parse(Console.ReadLine());
+Console.Write("Введите x2 для точки В: ");
+int x2 = int.Parse(Console.ReadLine());
+Console.Write("Введите y2 для точки В: ");
+int y2 = int.Parse(Console.ReadLine());
+Console.Write("Введите z2 для точки В: ");
+int z2 = int.Parse(Console.ReadLine());
+
+double s = Math.Sqrt(Math.Pow(x1 - x2, 2) + Math.Pow(y1 - y2, 2) + Math.Pow(z1 - z2, 2));
+
+Console.WriteLine($"s={s:f3}");
